@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+	--jade: #111111;
+	--onyx: #1a1a1a;
+	--blue: #44627b;
+	--teal: #7cb8c7;
+	--silver: #e8e8e8;
+}
+
+* {
+	background-color: var(--onyx);
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+#notfound {
+	height: 100vh;
+	background: var(--onyx);
+}
+
+.notfound {
+	position: absolute;
+	left: 50%;
+	top: 46%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100%;
+	line-height: 1.4;
+	text-align: center;
+}
+
+.notfound-404 {
+	position: relative;
+	height: 180px;
+	margin-bottom: 30px;
+	z-index: -1;
+}
+
+.notfound a {
+	font-family: 'Poppins', sans-serif;
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 2px solid;
+	background: 0 0;
+	padding: 10px 40px;
+	font-size: 14px;
+	font-weight: 700;
+	transition: 0.2s all;
+	cursor: pointer;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	color: var(--teal);
+	cursor: pointer;
+	text-decoration: none;
+	margin-top: 40px;
+}
+
+.notfound a:hover {
+	color: var(--silver);
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.notfound-404 h1 {
+	font-family: 'Poppins', sans-serif;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-size: 314px;
+	font-weight: 900;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: -12px;
+	color: var(--onyx);
+	text-transform: uppercase;
+	text-shadow: -2px -2px 0 var(--teal), 2px 2px 0 var(--blue);
+	letter-spacing: -20px;
+}
+
+h1 {
+	display: block;
+	font-size: 2em;
+	margin-block-start: 0.67em;
+	margin-block-end: 0.67em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+}
+
+.notfound-404 h2 {
+	font-family: 'Poppins', sans-serif;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 80px;
+	font-size: 42px;
+	font-weight: 700;
+	color: var(--silver);
+	text-transform: uppercase;
+	text-shadow: 0 2px 0 var(--blue);
+	letter-spacing: 13px;
+	margin: 0;
+}
+
+h2 {
+	display: block;
+	font-size: 1.5em;
+	margin-block-start: 0.83em;
+	margin-block-end: 0.83em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+	.notfound-404 {
+		margin-bottom: 10px;
+	}
+
+	.notfound-404 h1 {
+		font-size: 180px;
+	}
+
+	.notfound h2 {
+		font-size: 20px;
+		letter-spacing: 10px;
+		top: 5.5rem;
+	}
+
+	.notfound a {
+		margin-top: 10px;
+	}
+}

@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+	--jade: #111111;
+	--onyx: #1a1a1a;
+	--blue: #44627b;
+	--teal: #7cb8c7;
+	--silver: #e8e8e8;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	min-height: 80vh;
+}
+
+.container {
+	padding-top: 36vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container h1 {
+	font-weight: 300;
+	font-size: 4rem;
+	padding: 0.5rem;
+	letter-spacing: 0.1rem;
+	text-align: center;
+	overflow: hidden;
+	color: var(--silver);
+	font-family: 'Poppins', sans-serif;
+	padding-bottom: 15px;
+	text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.542);
+}
+
+.container h1 span.typed-text {
+	font-weight: normal;
+	color: var(--teal);
+}
+
+.container h1 span.cursor {
+	display: inline-block;
+	background-color: #ccc;
+	margin-left: 0.1rem;
+	width: 3px;
+	animation: blink 1s infinite;
+}
+
+.container h1 span.cursor.typing {
+	animation: none;
+}
+
+.media {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.media li {
+	display: inline-block;
+	list-style: none;
+	margin: 20px 20px;
+	font-size: 35px;
+	padding: 3px 3px;
+	color: var(--silver);
+	transition: .5s;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.542);
+}
+
+.media a {
+	color: var(--silver);
+}
+
+.media i:hover {
+	color: var(--teal);
+	transition: .5s;
+	cursor: pointer;
+}
+
+.widget {
+	position: absolute;
+	padding: 10px;
+	border-radius: 12px;
+	box-shadow: 0 0 10px var(--teal);
+	background-color: var(--onyx);
+	margin-left: 10px;
+	opacity: 0;
+	transition: all 0.2s;
+	display: flex;
+	margin-top: 10px;
+	margin-left: -190px;
+}
+
+.widget::after {
+	transition: all 0.5s ease 0s;
+}
+
+.status i:hover + .widget {
+	opacity: 1;
+}
+
+.mail-info {
+	position: absolute;
+	padding: 12px;
+	border-radius: 12px;
+	box-shadow: 0 0 10px var(--teal);
+	background-color: var(--onyx);
+	opacity: 0;
+	transition: all 0.2s;
+	display: flex;
+	margin-top: 10px;
+	color: #c6c5b9;
+	font-size: 14px;
+	margin-left: -88px;
+}
+
+.git-info {
+	position: absolute;
+	padding: 12px;
+	border-radius: 12px;
+	box-shadow: 0 0 10px var(--teal);
+	background-color: var(--onyx);
+	opacity: 0;
+	transition: all 0.2s;
+	display: flex;
+	margin-top: 10px;
+	color: #c6c5b9;
+	font-size: 14px;
+	margin-left: -27px;
+}
+
+.twit-info {
+	position: absolute;
+	padding: 12px;
+	border-radius: 12px;
+	box-shadow: 0 0 10px var(--teal);
+	background-color: var(--onyx);
+	opacity: 0;
+	transition: all 0.2s;
+	display: flex;
+	margin-top: 10px;
+	color: #c6c5b9;
+	font-size: 14px;
+	margin-left: -40px;
+}
+
+.mail-info::after {
+	transition: all 0.5s ease 0s;
+}
+
+.twit-info::after {
+	transition: all 0.5s ease 0s;
+}
+.git-info::after {
+	transition: all 0.5s ease 0s;
+}
+
+.mail i:hover + .mail-info {
+	opacity: 1;
+}
+
+.twit i:hover + .twit-info {
+	opacity: 1;
+}
+
+.git i:hover + .git-info {
+	opacity: 1;
+}
+
+@keyframes blink {
+	0% {
+		background-color: #ccc;
+	}
+	49% {
+		background-color: #ccc;
+	}
+	50% {
+		background-color: transparent;
+	}
+	99% {
+		background-color: transparent;
+	}
+	100% {
+		background-color: #ccc;
+	}
+}
+
+@media screen and (max-width: 1241px) {
+	.container h1 {
+		font-size: 3.5rem;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.container h1 {
+		font-size: 3rem;
+	}
+}
+
+@media screen and (max-width: 880px) {
+	.widget {
+		left: 60vw;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.container h1 {
+		font-size: 2rem;
+	}
+
+	.media li {
+		margin: 10px 15px;
+		font-size: 25px;
+	}
+
+	.mail-info {
+		display: none;
+	}
+
+	.git-info {
+		display: none;
+	}
+
+	.twit-info {
+		display: none;
+	}
+
+	.widget {
+		display: none;
+	}
+}

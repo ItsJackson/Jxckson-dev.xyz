@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+	--jade: #111111;
+	--onyx: #1a1a1a;
+	--blue: #44627b;
+	--teal: #7cb8c7;
+	--silver: #e8e8e8;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: var(--onyx);
+}
+
+h2 {
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	color: var(--silver);
+	font-size: 24px;
+	margin-top: 8rem;
+	letter-spacing: 3px;
+	padding-bottom: 1rem;
+	text-transform: uppercase;
+}
+
+.title p {
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	color: var(--silver);
+	font-size: 18px;
+	padding-top: 1rem;
+	letter-spacing: 1px;
+	padding-bottom: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+hr {
+	background: var(--teal);
+	margin: 2px;
+	height: 3px;
+	width: 150px;
+	border-radius: 5px;
+	border: hidden;
+	margin-inline-start: auto;
+	margin-inline-end: auto;
+}
+
+.gallery {
+	justify-self: center;
+	text-align: center;
+	margin: 50px;
+}
+
+.gallery img {
+	width: 400px;
+	margin: 2rem;
+	border-radius: 10px;
+	transition: box-shadow 1s;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.542);
+}
+
+@media screen and (max-width: 1024px) {
+	h2 {
+		font-size: 20px;
+	}
+
+	.title p {
+		font-size: 16px;
+	}
+
+	.gallery img {
+		width: 300px;
+		transition: 1s;
+		margin: 2rem;
+		border-radius: 10px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	h2 {
+		font-size: 18px;
+	}
+	.title p {
+		font-size: 14px;
+		padding-bottom: 0rem;
+	}
+
+	.gallery img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+		transition: 1s;
+		margin-top: 4rem;
+		border-radius: 10px;
+	}
+}
