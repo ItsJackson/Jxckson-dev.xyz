@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+:root {
+	--jade: #111111;
+	--onyx: #1a1a1a;
+	--blue: #44627b;
+	--teal: #7cb8c7;
+	--silver: #e8e8e8;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+.main-container h2 {
+	font-family: 'Poppins', sans-serif;
+	color: var(--silver);
+	font-size: 24px;
+	letter-spacing: 3px;
+	padding-bottom: 1rem;
+	text-align: left;
+}
+
+.main-container hr {
+	background: var(--teal);
+	margin: 2px;
+	height: 3px;
+	width: 100%;
+	border-radius: 5px;
+	border: hidden;
+	margin-bottom: 2rem;
+}
+
+.main-container p {
+	font-family: 'Poppins', sans-serif;
+	color: var(--silver);
+	font-size: 18px;
+	letter-spacing: 1px;
+	margin-top: 20px;
+	text-align: left;
+}
+
+
+
+.main-container {
+	margin-top: 6vh;
+	margin-right: 18vw;
+	margin-left: 18vw;
+	text-align: left;
+}
+
+.main-container img {
+	height: 200px;
+	width: 200px;
+	border-radius: 5px;
+	margin-right: 2vw;
+}
+
+.main-container img {
+	box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.542);
+}
+
+.content {
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-gap: 75px;
+	align-items: center;
+}
+
+.skills {
+	margin-top: 3rem;
+}
+
+/* Tech */
+
+.techs {
+	display: grid;
+	grid-template-columns: 30vw 1fr;
+	margin-left: 6vw;
+	margin-bottom: 6rem;
+}
+
+.tech {
+	display: inline-block;
+	align-items: center;
+	justify-content: center;
+}
+
+.tech li {
+	align-items: center;
+	list-style: none;
+	margin: 20px 20px;
+	font-size: 50px;
+	padding: 3px 3px;
+	color: var(--silver);
+	transition: .5s;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.542);
+	display: grid;
+	grid-template-columns: 70px 1fr;
+	align-items: center;
+}
+
+.tech p {
+	display: inline;
+	margin-top: 0;
+}
+
+@media screen and (max-width: 1300px) {
+	.techs {
+		display: inline-block;
+		margin-left: 0;
+	}
+
+	.botum {
+		margin-top: -24px;
+	}
+
+	.content {
+		display: inline-block;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.content p {
+		font-size: 18px;
+	}
+
+	.content {
+		display: inline-block;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.main-container h2 {
+		font-size: 20px;
+	}
+
+	.content p {
+		font-size: 14px;
+	}
+
+	.tech li {
+		font-size: 30px;
+		margin: 10px 10px;
+		grid-template-columns: 40px 1fr;
+	}
+
+	.botum {
+		margin-top: -12px;
+	}
+
+	.main-container {
+		margin-right: 12vw;
+		margin-left: 12vw;
+		margin-top: 2vh;
+	}
+
+	.main-container img {
+		height: 150px;
+		width: 150px;
+	}
+
+	.tech p {
+		font-size: 14px;
+	}
+
+	.techs {
+		margin-bottom: 2rem;
+	}
+}
