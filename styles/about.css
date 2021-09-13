@@ -1,17 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
 :root {
-	--jade: #111111;
-	--onyx: #1a1a1a;
+	--jade: #0c0c10;
+	--onyx: #101215;
 	--blue: #44627b;
-	--teal: #7cb8c7;
+	--teal: #78a1bb;
 	--silver: #e8e8e8;
+}
+
+body {
+	background-color: var(--onyx);
 }
 
 * {
 	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
+}
+
+.main-container a {
+	text-decoration: none;
+	color: var(--teal);
 }
 
 .main-container h2 {
@@ -24,7 +33,7 @@
 }
 
 .main-container hr {
-	background: var(--teal);
+	background: var(--blue);
 	margin: 2px;
 	height: 3px;
 	width: 100%;
@@ -35,14 +44,12 @@
 
 .main-container p {
 	font-family: 'Poppins', sans-serif;
-	color: var(--silver);
-	font-size: 18px;
+	color: silver;
+	font-size: 16px;
 	letter-spacing: 1px;
 	margin-top: 20px;
 	text-align: left;
 }
-
-
 
 .main-container {
 	margin-top: 6vh;
